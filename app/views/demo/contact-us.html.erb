@@ -1,0 +1,12 @@
+<h1>Contact us</h1>
+<p>sup</p>
+
+<% if params['country'] == 'us' ||  params['country'] == 'ca' %>
+    <p>(800) 555-6789</p>
+<% elsif params['country'] == 'uk' %>
+    <p>(020) 7946 1234</p>
+<% else %>
+    <p>+1 (987) 654-3210</p>
+<% end %>
+
+<%= link_to("About us", {:action => 'about'}) %>
